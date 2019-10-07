@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Can You Find the Right Card?</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Find the Right Card</h1>
+        </header>
+        
+        <main> 
+            <section>
+                <p class="result-text">The card you're looking for is below. When the game starts, you will be given two cards face down. Guess which card is the right one. If you get it right, you move on to the next round where an additional card is added. If you get it wrong, it's game over. Good luck!</p>
+            </section>
+            
+            <section>
+                <div class="card-grid">
+                    <img src="./assets/right-card.png">
+                </div>
+
+                <div>
+                    <p class="counter-div">
+                        Current Streak: <span class="streak-counter">0</span>
+                        <span class="counter-spacer"></span>
+                        Best Streak: <span class="best-streak-counter">0</span>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="start-button">Start Game</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
