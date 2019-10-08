@@ -13,18 +13,11 @@ html {
     font-size: 62.5%
 }
 
-/* * {border: 1px dashed lime;} */
-
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
     text-align: center;
-}
-
-section {
-    margin: 0;
-    padding: 0;
 }
 
 button {
@@ -49,14 +42,12 @@ button:hover {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-
-    height: 95vh;
 }
 
 h1 {
     text-transform: uppercase;
-    color: #2157ed;
     font-weight: 900;
+    color: #2157ed;
 }
 
 .result-text {
@@ -66,12 +57,12 @@ h1 {
 
 .card-grid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;   
 }
 
 img {
-    max-width: calc(25% - 40px);
+    width: calc(25% - 40px);
     margin: 20px;
     position: relative;
     top: 0;
@@ -97,4 +88,5 @@ img {
 .buttons {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
