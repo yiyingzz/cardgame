@@ -43,6 +43,7 @@
         cardGame.$cards.html(''); // remove all cards off screen
         cardGame.addNewCard();
         cardGame.shuffleCards();
+        cardGame.rearrangeCardGrid();
         cardGame.displayCards();
         cardGame.$counters.css('display', 'block'); // show counters
         cardGame.hideButton();
@@ -143,15 +144,19 @@
 
     cardGame.rearrangeCardGrid = function() {
         if (cardGame.cardDeck.length > 4) {
-            cardGame.$cards.children().css({'max-width':'', 'max-height':'calc(50% - 40px)'});
+            cardGame.$cards.children().css({'max-width':'', 'height':'calc(50% - 40px)'});
+        } else {
+            cardGame.init();
         }
-    }
+    };
+
+    cardGame.init = function() {
+        cardGame.$cards.children().css('max-width', 'calc(25% - 40px)');
+    };
     
 // document ready - setting up card size
 $(function() {
-    cardGame.init = function() {
-        cardGame.$cards.children().css('max-width', 'calc(25% - 40px)');
-    }
-})
+    cardGame.init();
+});
 
 // });
