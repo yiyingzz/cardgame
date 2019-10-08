@@ -10,7 +10,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
 }
 
 body {
@@ -62,7 +62,7 @@ h1 {
 }
 
 img {
-    width: calc(25% - 40px);
+    max-width: calc(25% - 40px);
     margin: 20px;
     position: relative;
     top: 0;
