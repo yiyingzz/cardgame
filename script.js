@@ -1,5 +1,5 @@
 // DOCUMENT READY
-$(function() {
+// $(function() {
 
     // namespace object
     const cardGame = {};
@@ -141,5 +141,17 @@ $(function() {
         };
     };
 
+    cardGame.rearrangeCardGrid = function() {
+        if (cardGame.cardDeck.length > 4) {
+            cardGame.$cards.children().css({'max-width':'', 'max-height':'calc(50% - 40px)'});
+        }
+    }
+    
+// document ready - setting up card size
+$(function() {
+    cardGame.init = function() {
+        cardGame.$cards.children().css('max-width', 'calc(25% - 40px)');
+    }
+})
 
-});
+// });

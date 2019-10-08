@@ -62,7 +62,6 @@ h1 {
 }
 
 img {
-    max-width: calc(25% - 40px);
     margin: 20px;
     position: relative;
     top: 0;
